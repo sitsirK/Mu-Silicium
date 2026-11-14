@@ -17,6 +17,17 @@
 [Packages]
   MdePkg/MdePkg.dec
   PcBdsPkg/PcBdsPkg.dec
+  SiliciumPkg/SiliciumPkg.dec
 
 [LibraryClasses]
+  BaseMemoryLib
   DevicePathLib
+  PcdLib
+  UefiBootServicesTableLib
+
+[Protocols]
+  gEfiBlockIoProtocolGuid
+  gEfiLoadedImageProtocolGuid
+
+[FixedPcd]
+  gSiliciumPkgTokenSpaceGuid.PcdSdCardBootOption
