@@ -53,6 +53,7 @@
   # Custom Drivers
   #
   QcomPkg/Drivers/DisplayReEnablerDxe/DisplayReEnablerDxe.inf
+  QcomPkg/Drivers/SdCardPowerDxe/SdCardPowerDxe.inf
 
   #
   # Custom Apps

@@ -60,6 +60,7 @@
   gEfiSMEMProtocolGuid                = { 0xF4E5C7D0, 0xD239, 0x47CB, { 0xAA, 0xCD, 0x7F, 0x66, 0xEF, 0x76, 0x32, 0x38 } }
   gEfiClockProtocolGuid               = { 0x241AFAE6, 0x885F, 0x4F6C, { 0xA7, 0xEA, 0xC2, 0x8E, 0xAB, 0x79, 0xC3, 0xE5 } }
   gEfiUsbMsdProtocolGuid              = { 0xC8591FAF, 0xDBCC, 0x479E, { 0x9E, 0xF2, 0xFD, 0x08, 0x5B, 0xC3, 0x7B, 0xC7 } }
+  gEfiNpaProtocolGuid                 = { 0x79D6C870, 0x725E, 0x489E, { 0xA0, 0xA1, 0x27, 0xE7, 0xA5, 0xD0, 0xCB, 0x35 } }
 
   # From https://git.codelinaro.org/clo/la/abl/tianocore/edk2/-/tree/LA.VENDOR.14.3.4.c1-18300-ANORAK.0
 
@@ -109,6 +110,15 @@
   # Storage
   #
   gQcomPkgTokenSpaceGuid.PcdStorageIsUfs3|TRUE|BOOLEAN|0x0000C200
+
+  #
+  # SD Card Slot Power (SdCardPowerDxe)
+  #
+  # The PMIC Client that powers the SD Card Slot, and the Mode to request on it.
+  # Mode 3 of "/pmic/client/sd" is the Card Supply plus 2.95V on the Pads on SM8250.
+  #
+  gQcomPkgTokenSpaceGuid.PcdSdCardNpaResource|"/pmic/client/sd"|VOID*|0x0000C201
+  gQcomPkgTokenSpaceGuid.PcdSdCardNpaMode|3|UINT32|0x0000C202
 
   #
   # Mass Storage

@@ -1,0 +1,30 @@
+[Defines]
+  INF_VERSION                    = 0x0010005
+  BASE_NAME                      = SdCardPowerDxe
+  FILE_GUID                      = 5ABE6521-F076-4D31-B8B5-8D7B7F91AE15
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = PowerSdCardSlot
+
+[Sources]
+  SdCardPowerDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  QcomPkg/QcomPkg.dec
+
+[LibraryClasses]
+  DebugLib
+  PcdLib
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+
+[Protocols]
+  gEfiNpaProtocolGuid
+
+[FixedPcd]
+  gQcomPkgTokenSpaceGuid.PcdSdCardNpaResource
+  gQcomPkgTokenSpaceGuid.PcdSdCardNpaMode
+
+[Depex]
+  gEfiNpaProtocolGuid
