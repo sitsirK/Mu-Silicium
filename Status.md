@@ -3114,7 +3114,7 @@
 **State:** Inactive <br>
 **Codename:** r8q
 
-**Contributors:** [olegos2](https://github.com/olegos2), [Robotix](https://github.com/Robotix22/)
+**Contributors:** [olegos2](https://github.com/olegos2), [Robotix](https://github.com/Robotix22/), [sitsirK](https://github.com/sitsirK)
 
 ### UEFI Status
 
@@ -3129,7 +3129,51 @@
 | Mass Storage       |                   | ✅    |
 | SD Card            |                   | ✅    |
 | Windows Boot       |                   | ❌    |
-| Linux Boot         |                   | ❌    |
+| Linux Boot         |                   | ✅    |
+
+### OS Status
+
+<table>
+<tr><th>Linux</th></tr>
+<tr><td>
+
+> [!IMPORTANT]
+> Linux Requires: [Mainline Kernel](https://github.com/sitsirK/r8q-arch).
+
+| Feature              | Description                   | State |
+|:---------------------|:------------------------------|:-----:|
+| Internal Storage     |                               | ✅    |
+| SD Card              | Capped at 100 MHz             | ✅    |
+| Side Buttons         |                               | ✅    |
+| Proximity Sensor     |                               | ❌    |
+| Light Sensor         |                               | ❌    |
+| Accelerometer Sensor |                               | ❌    |
+| Compass Sensor       |                               | ❌    |
+| Gyroscope Sensor     |                               | ❌    |
+| Fingerprint Sensor   |                               | ❌    |
+| NFC Sensor           |                               | ❌    |
+| Temperature Sensor   |                               | ✅    |
+| Battery              |                               | ✅    |
+| USB Host Mode        |                               | ❌    |
+| USB Device Mode      |                               | ✅    |
+| USB Power Delivery   |                               | ❌    |
+| Charging             | Slow Charging                 | ✅    |
+| WLAN                 |                               | ✅    |
+| CPU                  | Cores randomly stop           | ⚠️    |
+| Touchscreen          |                               | ✅    |
+| Bluetooth            |                               | ❌    |
+| GPS                  |                               | ❌    |
+| Speakers             |                               | ❌    |
+| Microphone           |                               | ❌    |
+| GPU                  | Needs the Stock Zap Shader    | ✅    |
+| Camera               | Rear Telephoto only, no Focus | ⚠️    |
+| Flashlight           |                               | ❌    |
+| Mobile Data          |                               | ❌    |
+| Display              | Only framebuffer              | ⚠️    |
+| Vibration            |                               | ❌    |
+
+</td></tr>
+</table>
 
 </details>
 
