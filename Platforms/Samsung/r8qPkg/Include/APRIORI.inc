@@ -41,6 +41,7 @@ APRIORI DXE {
 
   INF Binaries/r8q/QcomPkg/Drivers/SdccDxe/SdccDxe.inf
   INF Binaries/r8q/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
+  INF QcomPkg/Drivers/SdCardPowerDxe/SdCardPowerDxe.inf
 
   INF FatPkg/EnhancedFatDxe/Fat.inf
 

@@ -56,6 +56,7 @@
   INF Binaries/r8q/QcomPkg/Drivers/SPMIDxe/SPMIDxe.inf
   INF Binaries/r8q/QcomPkg/Drivers/SdccDxe/SdccDxe.inf
   INF Binaries/r8q/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
+  INF QcomPkg/Drivers/SdCardPowerDxe/SdCardPowerDxe.inf
   INF Binaries/r8q/QcomPkg/Drivers/TLMMDxe/TLMMDxe.inf
   INF Binaries/r8q/QcomPkg/Drivers/FeatureEnablerDxe/FeatureEnablerDxe.inf
 

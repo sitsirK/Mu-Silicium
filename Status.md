@@ -3127,7 +3127,7 @@
 | USB Device Mode    |                   | ✅    |
 | USB Power Delivery |                   | ❌    |
 | Mass Storage       |                   | ✅    |
-| SD Card            |                   | ❌    |
+| SD Card            |                   | ✅    |
 | Windows Boot       |                   | ❌    |
 | Linux Boot         |                   | ❌    |
 
