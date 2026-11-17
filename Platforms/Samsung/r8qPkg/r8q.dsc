@@ -67,6 +67,11 @@
   #
   gQcomPkgTokenSpaceGuid.PcdPlatformType|"LA"
 
+  #
+  # Boot Options
+  #
+  gSiliciumPkgTokenSpaceGuid.PcdSdCardBootOption|TRUE
+
 [LibraryClasses]
   #
   # Memory Libraries

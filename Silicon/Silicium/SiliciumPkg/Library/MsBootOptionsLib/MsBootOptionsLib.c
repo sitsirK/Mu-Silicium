@@ -244,6 +244,12 @@ MsBootOptionsLibRegisterDefaultBootOptions ()
 
   // Register Default Boot Options
   RegisterFvBootOption (&gMsBootPolicyFileGuid,            L"Internal Storage", (UINTN)-1, LOAD_OPTION_ACTIVE, (UINT8 *)"SSD", sizeof ("SSD"));
+
+  // Register SD Card Boot Option (MsBootPolicyLib tells "SD" apart from "SSD")
+  if (FixedPcdGetBool (PcdSdCardBootOption)) {
+    RegisterFvBootOption (&gMsBootPolicyFileGuid,          L"SD Card",          (UINTN)-1, LOAD_OPTION_ACTIVE, (UINT8 *)"SD",  sizeof ("SD"));
+  }
+
   RegisterFvBootOption (&gMsBootPolicyFileGuid,            L"USB Storage",      (UINTN)-1, LOAD_OPTION_ACTIVE, (UINT8 *)"USB", sizeof ("USB"));
   RegisterFvBootOption (FixedPcdGetPtr (PcdUfpLoaderFile), L"FFU Mode",         (UINTN)-1, LOAD_OPTION_HIDDEN, NULL, 0);
 
