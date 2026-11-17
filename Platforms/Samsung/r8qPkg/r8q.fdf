@@ -96,11 +96,11 @@ READ_LOCK_STATUS   = TRUE
   #INF RuleOverride = ACPITABLE r8q/AcpiTables.inf
 
   # Device Tree
-  #INF EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe.inf
-  #FILE FREEFORM = 25462CDA-221F-47DF-AC1D-259CFAA4E326 {
-  #  SECTION RAW = r8qPkg/FdtBlob/sm8250-samsung-r8q.dtb
-  #  SECTION UI = "Device Tree"
-  #}
+  INF EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe.inf
+  FILE FREEFORM = 25462CDA-221F-47DF-AC1D-259CFAA4E326 {
+    SECTION RAW = r8qPkg/FdtBlob/sm8250-samsung-r8q.dtb
+    SECTION UI = "Device Tree"
+  }
 
   !include QcomPkg/Extra.fdf.inc
 
